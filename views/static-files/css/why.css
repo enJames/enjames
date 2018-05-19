@@ -1,0 +1,116 @@
+body {
+    font-size: 25px;;
+}
+nav a, footer a {
+    font-size: 22px;
+    color: rgb(47,85,151) !important;
+}
+nav a:hover {
+    color: rgb(150,200,200) !important;
+}
+.logo {
+    width: 80px;
+}
+.section {
+    background-image: url('../img/me5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.welcome {
+    padding: 12% 0;
+}
+.welcome h1 {
+    margin: 0 0 15px 0;
+    font-size: 70px;
+}
+.welcome p {
+    width: 50%;
+}
+.wrapper {
+    margin: auto;
+    color: rgb(47,85,151);
+    width: 80%;
+    padding: 80px 0;
+}
+.wrapper h1 {
+    margin: 0 0 70px 0;
+}
+.button {
+    padding: 0 0 70px 0;
+}
+.read-more {
+    text-decoration: none !important;
+    padding: 10px 40px;
+    border: 2px solid rgb(47,85,151);
+    color: rgb(47,85,151);
+    cursor: pointer;
+    transition: .5s ease;
+}
+.read-more:hover {
+    background-color: rgb(47,85,151);
+    color: white;
+}
+footer {
+    background-color: black;
+    color: rgb(190, 190, 190);
+    padding: 40px 2%;
+}
+.footer-nav-wrapper {
+    padding: 5% 2%;
+}
+.footer-nav {
+    display: inline-block;
+}
+.footer-nav a {
+    font-size: 22px;
+    color: rgb(190, 190, 190) !important;
+}
+.footer-nav a:hover {
+    text-decoration: none;
+    color: rgba(190, 190, 190,.5) !important;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    .welcome h1 {
+        font-size: 50px;
+    }
+    .wrapper h1 {
+        margin: 0 0 40px 0;
+        font-size: 30px;
+    }
+    .content p {
+        font-size: 18px;
+    }
+    .footer-nav a {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .welcome p {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .welcome h1 {
+        font-size: 40px;
+    }
+    .welcome p {
+        font-size: 18px;
+    }
+    .wrapper h1 {
+        margin: 0 0 30px 0;
+        font-size: 25px;
+    }
+    footer h2 {
+        font-size: 25px;
+    }
+}

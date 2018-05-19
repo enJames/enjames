@@ -1,0 +1,103 @@
+body, html {
+    height: 100%;
+}
+.main {
+    background-image: url('../img/me3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.cover {
+    background-color: rgb(0,15,40,.8);
+    height: 100%;
+}
+.navbar-toggler {
+    border-color: white !important;
+}
+nav a {
+    font-size: 22px;
+    color: white !important;
+}
+nav a:hover {
+    color: rgb(14,113,198) !important;
+}
+.fa-bars {
+    color: white;
+    font-size: 30px;
+}
+.brand {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.brand-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+.logo {
+    width: 80px;
+}
+.brand-name h1 {
+    font-size: 80px;
+}
+.brand-name p {
+    margin: auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+}
+.brand-name p a {
+    text-decoration: none;
+    color: white;
+}
+.brand-name p a:hover {
+    color: rgb(14,113,198);
+}
+
+.why {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -8%);
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+.why a {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.why a:hover {
+    background-color: white;
+    color: rgb(14,113,198);
+}
+
+@media screen and (max-width: 700px) {
+    nav a {
+        font-size: 18px;
+        color: white !important;
+    }
+    .logo {
+        width: 100px;
+    }
+    .brand-name h1 {
+        font-size: 50px;
+    }
+    .brand-name p {
+        font-size: 15px;
+    }
+    .why p {
+        font-size: 15px;
+    }
+}
