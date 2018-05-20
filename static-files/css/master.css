@@ -1,6 +1,15 @@
-.bg-white {
-    background-color: black;
-    box-shadow: 1px 1px 15px -4px;
+#scrollingNav {
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o--transition: .3s ease;
+}
+
+.bg-mywhite {
+    background-color: rgba(255,255,255,.85);
 }
 .bg-grey {
     background-color: rgb(230,230,230);

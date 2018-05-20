@@ -62,7 +62,6 @@ nav a:hover {
 }
 
 .why {
-    width: 100%;
     position: absolute;
     bottom: 8%;
     left: 50%;
@@ -72,14 +71,15 @@ nav a:hover {
 }
 .why a {
     text-decoration: none;
+}
+.why p {
     padding: 10px;
     border: 1px solid white;
     font-size: 20px;
     color: white;
     transition: .5s ease;
-    cursor: pointer;
 }
-.why a:hover {
+.why p:hover {
     background-color: white;
     color: rgb(14,113,198);
 }
