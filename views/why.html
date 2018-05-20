@@ -14,16 +14,16 @@
     </head>
     <body>
         <div class="main">
-            <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white">
+            <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-mywhite" id="scrollingNav">
                 <a class="navbar-brand" href="/">
                     <div class="logo mx-auto">
                         <img class="img-fluid" src="/img/logodb.png" alt="logo">
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#scrollingNavAltMarkup" aria-controls="scrollingNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse" id="scrollingNavAltMarkup">
                     <div class="navbar-nav ml-auto pr-4">
                         <a class="nav-item nav-link mr-2" href="#">The Dream</a>
                         <a class="nav-item nav-link mr-2" href="/why">Why</a>
@@ -33,6 +33,23 @@
             </nav>
             <div class="section">
                 <div class="tint-blueblack">
+                    <nav class="navbar navbar-expand-sm navbar-light" id="staticNav">
+                        <a class="navbar-brand" href="/">
+                            <div class="logo mx-auto">
+                                <img class="img-fluid" src="/img/logow.png" alt="logo">
+                            </div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#staticNavAltMarkup" aria-controls="staticNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="staticNavAltMarkup">
+                            <div class="navbar-nav ml-auto pr-4">
+                                <a class="nav-item nav-link mr-2" href="#">The Dream</a>
+                                <a class="nav-item nav-link mr-2" href="/why">Why</a>
+                                <a class="nav-item nav-link" href="#">About</a>
+                            </div>
+                        </div>
+                    </nav>
                     <div class="welcome">
                         <h1>Why I invited you here</h1>
                         <p class="mx-auto">Thank you for honouring the invitation. I intend to make good use of the few minutes of attention you just offered me.</p>
@@ -74,21 +91,10 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-        /*
-        window.onload = function() {
-            alert('height');
-            let brandName = document.getElementById('brand-div');
-            let body = document.getElementById('body');
-            let height = brandName.offsetHeight;
-            let bodyHeight = body.offsetHeight;
-            alert(height + ', ' + bodyHeight);
-        }
-
-        </script>
+        <script type="text/babel" src="/js/main.js"></script>
     </body>
-
 </html>

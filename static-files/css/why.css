@@ -3,9 +3,25 @@ body {
 }
 nav a, footer a {
     font-size: 22px;
+}
+#scrollingNav .fa-bars {
+    color: rgb(47,85,151);
+    font-size: 30px;
+}
+#scrollingNav div a {
     color: rgb(47,85,151) !important;
 }
-nav a:hover {
+#scrollingNav div a:hover {
+    color: rgb(150,200,200) !important;
+}
+#staticNav .fa-bars {
+    color: white;
+    font-size: 30px;
+}
+#staticNav div a {
+    color: white !important;
+}
+#staticNav div a:hover {
     color: rgb(150,200,200) !important;
 }
 .logo {
@@ -17,10 +33,10 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    text-align: center;
 }
 .welcome {
     padding: 12% 0;
+    text-align: center;
 }
 .welcome h1 {
     margin: 0 0 15px 0;
@@ -77,7 +93,7 @@ footer {
     body {
         font-size: 20px;;
     }
-    nav a {
+    #staticNav div a {
         font-size: 18px;
     }
     .welcome h1 {
@@ -93,8 +109,6 @@ footer {
     .footer-nav a {
         font-size: 18px;
     }
-}
-@media screen and (max-width: 768px) {
     .welcome p {
         width: 90%;
     }
