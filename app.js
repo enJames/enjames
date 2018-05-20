@@ -12,7 +12,7 @@ app.use(logger('combined'));
 
 // Routes
 app.use('/', (req, res) => {
-    res.sendFile('index.html');
+    res.sendFile('views/index.html');
 });
 app.use('/thedream', (req, res) => {
     res.sendFile('thedream.html');

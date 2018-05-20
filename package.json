@@ -4,7 +4,7 @@
   "description": "A personal website for Enejo James",
   "main": "app.js",
   "scripts": {
-    "start": "babel-node server/app.js"
+    "start": "babel-node app.js"
   },
   "repository": {
     "type": "git",
