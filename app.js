@@ -1,8 +1,10 @@
 import express from 'express';
 import logger from 'morgan';
+import path from 'path';
 
 const app = express();
 const port = parseInt(process.env.PORT, 10) || 8000;
+const root = { root: path.join(__dirname, 'views') };
 
 // Set folder to serve static files from
 app.use(express.static('static-files'));
@@ -11,17 +13,17 @@ app.use(express.static('static-files'));
 app.use(logger('combined'));
 
 // Routes
-app.use('/', (req, res) => {
-    res.sendFile('views/index.html');
+app.get('/', (req, res) => {
+    res.sendFile('index.html', root);
 });
-app.use('/thedream', (req, res) => {
-    res.sendFile('thedream.html');
+app.get('/thedream', (req, res) => {
+    res.sendFile('thedream.html', root);
 });
-app.use('/why', (req, res) => {
-    res.sendFile('why.html');
+app.get('/why', (req, res) => {
+    res.sendFile('why.html', root);
 });
-app.use('/about', (req, res) => {
-    res.sendFile('about.html');
+app.get('/about', (req, res) => {
+    res.sendFile('about.html', root);
 });
 
 app.listen(port);

@@ -9,7 +9,7 @@ nav a:hover {
     color: rgb(150,200,200) !important;
 }
 .logo {
-    width: 80px;
+    width: 60px;
 }
 .section {
     background-image: url('../img/me5.jpg');
@@ -56,10 +56,10 @@ nav a:hover {
 footer {
     background-color: black;
     color: rgb(190, 190, 190);
-    padding: 40px 2%;
+    padding: 70px 2% 0 2%;
 }
 .footer-nav-wrapper {
-    padding: 5% 2%;
+    padding: 4% 2%;
 }
 .footer-nav {
     display: inline-block;

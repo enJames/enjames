@@ -62,6 +62,7 @@ nav a:hover {
 }
 
 .why {
+    width: 100%;
     position: absolute;
     bottom: 8%;
     left: 50%;
