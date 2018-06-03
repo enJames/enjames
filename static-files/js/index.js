@@ -35,3 +35,10 @@ viewLetter.addEventListener('click', () => {
         letterDiv.style.height = '0';
     }
 }, false);
+
+// Open Modal
+$(document).ready(function(){
+    setTimeout(() => {
+        $('#indexModal').modal('show');
+    }, 3000);
+});
