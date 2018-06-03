@@ -40,5 +40,5 @@ viewLetter.addEventListener('click', () => {
 $(document).ready(function(){
     setTimeout(() => {
         $('#indexModal').modal('show');
-    }, 3000);
+    }, 2000);
 });
