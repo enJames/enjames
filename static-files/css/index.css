@@ -83,6 +83,19 @@ nav a:hover {
     background-color: white;
     color: rgb(14,113,198);
 }
+.modal-header, .btn-primary {
+    background-color: rgb(47,85,151);
+    color: white;
+}
+.modal-body {
+    color: rgb(47,85,151);
+}
+.btn-secondary {
+    background-color: black;
+}
+input::placeholder {
+    font-style: italic;
+}
 
 @media screen and (max-width: 700px) {
     nav a {

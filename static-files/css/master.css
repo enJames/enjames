@@ -14,7 +14,29 @@
 .bg-grey {
     background-color: rgb(230,230,230);
 }
+.bg-black {
+    background-color: black;
+    color: white;
+}
 .tint-blueblack {
     background-color: rgb(0,15,40,.8);
     height: 100%;
+}
+.the-grid {
+    background-color: white;
+    border-top: 4px solid rgb(47,85,151);
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,.4);
+    transition: .4s ease-in-out;
+}
+.the-grid:hover {
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,.4);
+}
+.social-media-btns span {
+    font-size: 50px;
+}
+.social-media-btns:last-child {
+    margin-left: 40px;
+}
+.social-media-btns:hover {
+    text-decoration: none;
 }

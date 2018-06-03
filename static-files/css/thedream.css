@@ -1,5 +1,6 @@
 body {
-    font-size: 25px;;
+    font-size: 25px;
+    transition: all .5s ease-in-out;
 }
 nav a, footer a {
     font-size: 22px;
@@ -28,7 +29,7 @@ nav a, footer a {
     width: 60px;
 }
 .section {
-    background-image: url('../img/me5.jpg');
+    background-image: url('../img/me6.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +41,9 @@ nav a, footer a {
 }
 .welcome h1 {
     margin: 0 0 15px 0;
-    font-size: 70px;
+    font-size: 40px;
+    width: 70%;
+    margin: auto;
 }
 .welcome p {
     width: 50%;
@@ -49,7 +52,12 @@ nav a, footer a {
     margin: auto;
     color: rgb(47,85,151);
     width: 80%;
-    padding: 80px 0 40px;
+    padding: 80px 0;
+    text-align: justify;
+}
+.cite {
+    width: 70%;
+    margin: auto auto 40px auto;
 }
 .black-color {
     color: white;
@@ -57,22 +65,17 @@ nav a, footer a {
 .wrapper h1 {
     margin: 0 0 70px 0;
 }
-.admissionLetterContainer {
-    height: 0;
-    margin-bottom: 40px;
-    overflow: hidden;
-    transition: .5s ease-in-out;
+.wrapper h3 {
+    margin: 40px 0;
 }
-.admissionLetterWrapper {
-    width: 70%;
-    margin: 20px auto;
-    box-shadow: 1px 1px 10px 1px rgb(0,0,0,0.3);
+.wrapper li {
+    margin: 15px 0 0 0;
 }
 .button {
     padding: 0 0 70px 0;
 }
 .read-more {
-    text-decoration: none;
+    text-decoration: none !important;
     padding: 10px 40px;
     border: 2px solid rgb(47,85,151);
     color: rgb(47,85,151);
@@ -106,7 +109,27 @@ footer {
     color: rgba(190, 190, 190,.5) !important;
 }
 
-
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 20px;;
+    }
+    #staticNav div a {
+        font-size: 18px;
+    }
+    .welcome h1 {
+        font-size: 50px;
+    }
+    .wrapper h1 {
+        margin: 0 0 40px 0;
+        font-size: 30px;
+    }
+    .footer-nav a {
+        font-size: 18px;
+    }
+    .welcome p {
+        width: 80%;
+    }
+}
 @media screen and (max-width: 768px) {
     .welcome h1 {
         font-size: 40px;
@@ -120,8 +143,5 @@ footer {
     }
     footer h2 {
         font-size: 25px;
-    }
-    .admissionLetterWrapper {
-        width: 90%;
     }
 }

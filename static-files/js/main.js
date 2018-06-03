@@ -1,9 +1,11 @@
+// Get elements
+const veiwLetter = document.getElementById('viewLetter');
+
 // Scroll navigation
-const scrollNavigation = () => {
+window.onscroll = () => {
     const staticNav = document.getElementById('staticNav');
     const scrollingNav = document.getElementById('scrollingNav');
     const scrollValue = document.documentElement.scrollTop;
-    console.log(scrollValue + ', ' + staticNav.clientHeight);
 
     // Check that a user has scrolled at least 20px
     if (scrollValue > 10) {
@@ -21,10 +23,15 @@ const scrollNavigation = () => {
         // if a user scrolls less than 20px, set navbar to hidden
         scrollingNav.style.visibility = 'hidden';
     }
-
-
 };
 
-window.onscroll = () => {
-    scrollNavigation()
-};
+viewLetter.addEventListener('click', () => {
+    const letterDiv = document.getElementsByClassName('admissionLetterContainer')[0];
+    const letterWrapper = document.getElementsByClassName('admissionLetterWrapper')[0];
+
+    if (letterDiv.clientHeight === 0) {
+        letterDiv.style.height = letterWrapper.clientHeight + 30 + 'px';
+    } else {
+        letterDiv.style.height = '0';
+    }
+}, false);
