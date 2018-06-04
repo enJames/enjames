@@ -1,37 +1,21 @@
-// Get elements
-const veiwLetter = document.getElementById('viewLetter');
+const speakToMe = document.getElementById('speakToMe');
 
-// Scroll navigation
-window.onscroll = () => {
-    const staticNav = document.getElementById('staticNav');
-    const scrollingNav = document.getElementById('scrollingNav');
-    const scrollValue = document.documentElement.scrollTop;
+speakToMe.addEventListener('click', () => {
+    // Get elements
+    const erresponse = document.getElementById('erresponse');
+    const passcodeInput = document.getElementById('passcode');
+    const passcode = passcodeInput.value;
 
-    // Check that a user has scrolled at least 20px
-    if (scrollValue > 10) {
-        // adjust opacity and set Navbar to visible
-        const opacityValue = (scrollValue - 40)/staticNav.clientHeight;
-
-        if (opacityValue < 1) {
-            scrollingNav.style.visibility = 'visible';
-            scrollingNav.style.opacity = `${opacityValue}`;
-        } else {
-            scrollingNav.style.visibility = 'visible';
-            scrollingNav.style.opacity = '1';
-        }
+    if (passcode.length === 0) {
+        displayError(erresponse, 'Woops! Looks like you have not entered a code');
+    } else if (passcode.length < 4 || passcode.length > 4) {
+        displayError(erresponse, 'I think the code is invalid');
     } else {
-        // if a user scrolls less than 20px, set navbar to hidden
-        scrollingNav.style.visibility = 'hidden';
-    }
-};
+        const ResObject = { passcode };
 
-viewLetter.addEventListener('click', () => {
-    const letterDiv = document.getElementsByClassName('admissionLetterContainer')[0];
-    const letterWrapper = document.getElementsByClassName('admissionLetterWrapper')[0];
+        console.log(passcode);
+        console.log(ResObject);
 
-    if (letterDiv.clientHeight === 0) {
-        letterDiv.style.height = letterWrapper.clientHeight + 30 + 'px';
-    } else {
-        letterDiv.style.height = '0';
+        SendPassCode('/', ResObject, erresponse); // Send passcode to server
     }
 }, false);
