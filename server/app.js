@@ -25,7 +25,7 @@ app.use(session({
     secret: 'enKhing',
     resave: true,
     saveUninitialized: true,
-    store: new FileStore({ logFn: () => {} })
+    store: new FileStore()
 }));
 
 
